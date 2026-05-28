@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suanaph — Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,600;0,9..40,800;1,9..40,300&family=Fira+Code:wght@300;400;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/retro.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<canvas id="starCanvas"></canvas>
+<button class="go-top" id="goTop" aria-label="Go to top">↑</button>
+
+<!-- ── NAV ── -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">suanaph_</a>
+        <div class="nav-links">
+            <a href="#about"     class="nav-link" data-section="about">About</a>
+            <a href="#skills"    class="nav-link" data-section="skills">Skills</a>
+            <a href="#portfolio" class="nav-link" data-section="portfolio">Projects</a>
+            <a href="#journey"   class="nav-link" data-section="journey">Journey</a>
+            <a href="#upcoming"  class="nav-link" data-section="upcoming">Upcoming</a>
+        </div>
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            <span class="status-label">Available</span>
+        </div>
+    </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero-section">
+    <div class="hero-inner">
+        <div class="hero-left">
+            <div class="hero-overline">System Online · MacBook Air M3 · Bangkok, TH</div>
+            <h1 class="hero-title">
+                Tech<br>
+                <span class="hero-title-accent" id="typedTitle">Enthusiast.</span>
+            </h1>
+            <div class="hero-typed-line">
+                <span class="typed-word" id="typedRole">Problem Solver</span><span class="typed-cursor-char">|</span>
+            </div>
+            <p class="hero-desc">
+                IE-minded Developer · Hackintosh Engineer · Retro Modder · Future Builder
+                <span class="hero-desc-th">ผสมผสาน Process Optimization เข้ากับการเขียนโค้ด สร้างระบบที่ลดขั้นตอนซ้ำซ้อนได้จริง</span>
+            </p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn btn-primary">
+                    View Projects
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/J4olahmXDev" target="_blank" class="btn btn-ghost">
+                    GitHub ↗
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="hero-panel">
+                <div class="hero-panel-header">
+                    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                    <span>suanaph · stats</span>
+                </div>
+                <div class="stat-grid">
+                    <div class="stat-cell"><span class="stat-num">4</span><span class="stat-lbl">Hackintosh Builds</span></div>
+                    <div class="stat-cell"><span class="stat-num">7+</span><span class="stat-lbl">Projects</span></div>
+                    <div class="stat-cell"><span class="stat-num">4+</span><span class="stat-lbl">Years Hacking</span></div>
+                    <div class="stat-cell"><span class="stat-num">3</span><span class="stat-lbl">OS Platforms</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-strip">
+        <div class="hero-strip-inner">
+            <span class="strip-item">Swift · SwiftUI</span>
+            <span class="strip-sep">·</span>
+            <span class="strip-item">Google Apps Script</span>
+            <span class="strip-sep">·</span>
+            <span class="strip-item">OpenCore · ACPI/DSDT</span>
+            <span class="strip-sep">·</span>
+            <span class="strip-item">Linux · macOS · Windows</span>
+            <span class="strip-sep">·</span>
+            <span class="strip-item">Python · Bash</span>
+            <span class="strip-sep">·</span>
+            <span class="strip-item">Process Optimization · IE Logic</span>
+            <span class="strip-sep">·</span>
+            <span class="strip-item">Rockbox · Custom Firmware</span>
+        </div>
+    </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="section-container">
+    <div class="section-label sa-fade-up">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-rule"></div>
+    </div>
+
+    <!-- Motivation cards -->
+    <div class="about-grid">
+        <div class="about-card sa-slide-l sa-d1">
+            <div class="about-card-icon">⚙️</div>
+            <h3>IE × Developer</h3>
+            <p>วิศวกรอุตสาหการผู้หลงใหลใน Software Development ผสมผสานศาสตร์แห่ง Process Optimization เข้ากับการเขียนโค้ด เพื่อสร้างระบบ Automation ที่ลดขั้นตอนซ้ำซ้อนและเพิ่มประสิทธิภาพให้ทีมได้อย่างเป็นรูปธรรม</p>
+        </div>
+        <div class="about-card sa-slide-l sa-d2">
+            <div class="about-card-icon">🔩</div>
+            <h3>Hackintosh Origins</h3>
+            <p>เริ่มศึกษา Hackintosh จริงจังช่วงกลางปี 2021 เพื่อรีดประสิทธิภาพของฮาร์ดแวร์ให้ถึงขีดสุด ควบคู่กับความหลงใหลในสุนทรียภาพของ macOS — จุดเริ่มต้นที่ทำให้เข้าใจสถาปัตยกรรมระดับลึกของ OS อย่างแท้จริง</p>
+        </div>
+        <div class="about-card sa-slide-l sa-d3">
+            <div class="about-card-icon">🧠</div>
+            <h3>Self-Taught Mindset</h3>
+            <p>เรียนรู้ Swift, SwiftUI, Python, ACPI Patching และ Linux Administration ด้วยตัวเองทั้งหมด ใช้ VS Code + Excalidraw วาด Flowchart อธิบาย Logic ให้ทีม และชอบแก้ปัญหาจากต้นตอเสมอ</p>
+        </div>
+    </div>
+
+    <!-- Terminal -->
+    <div class="sa-scale" style="margin-top: 48px;">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                <span class="terminal-title">suanaph@MacBook-Air-M3 ~ %</span>
+            </div>
+            <div class="terminal-body" id="terminal-content"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills" class="section-container">
+    <div class="section-label sa-fade-up">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <div class="section-rule"></div>
+    </div>
+
+    <!-- Skill level bars -->
+    <div class="skill-levels sa-fade-up" style="margin-bottom: 56px;">
+        <div class="skill-bar-row">
+            <span class="skill-bar-label">Workflow Automation</span>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--sw:88%"></div></div>
+            <span class="skill-bar-level">Advanced</span>
+        </div>
+        <div class="skill-bar-row">
+            <span class="skill-bar-label">Process Optimization (IE)</span>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--sw:85%"></div></div>
+            <span class="skill-bar-level">Advanced</span>
+        </div>
+        <div class="skill-bar-row">
+            <span class="skill-bar-label">Hackintosh / System Mod</span>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--sw:82%"></div></div>
+            <span class="skill-bar-level">Advanced</span>
+        </div>
+        <div class="skill-bar-row">
+            <span class="skill-bar-label">Linux / macOS Admin</span>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--sw:72%"></div></div>
+            <span class="skill-bar-level">Intermediate</span>
+        </div>
+        <div class="skill-bar-row">
+            <span class="skill-bar-label">Google Apps Script</span>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--sw:68%"></div></div>
+            <span class="skill-bar-level">Intermediate</span>
+        </div>
+        <div class="skill-bar-row">
+            <span class="skill-bar-label">Swift / SwiftUI</span>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--sw:55%"></div></div>
+            <span class="skill-bar-level">Intermediate</span>
+        </div>
+    </div>
+
+    <div class="skills-grid">
+        <div class="skill-card sa-fade-up sa-d1" data-num="01">
+            <div class="skill-icon">💻</div>
+            <h3>Programming &amp; Dev</h3>
+            <div class="tag-container">
+                <span class="tag tag-hi">Swift</span>
+                <span class="tag tag-hi">SwiftUI</span>
+                <span class="tag tag-hi">Google Apps Script</span>
+                <span class="tag">Python</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">Xcode</span>
+            </div>
+        </div>
+        <div class="skill-card sa-fade-up sa-d2" data-num="02">
+            <div class="skill-icon">⚙️</div>
+            <h3>Automation &amp; Workflow</h3>
+            <div class="tag-container">
+                <span class="tag tag-hi">Process Optimization</span>
+                <span class="tag tag-hi">IE Logic</span>
+                <span class="tag">Google Sheets Backend</span>
+                <span class="tag">Excalidraw Flowchart</span>
+                <span class="tag">Batch Scripting</span>
+            </div>
+        </div>
+        <div class="skill-card sa-fade-up sa-d3" data-num="03">
+            <div class="skill-icon">🖥</div>
+            <h3>OS &amp; Server</h3>
+            <div class="tag-container">
+                <span class="tag tag-hi">macOS</span>
+                <span class="tag tag-hi">Linux (CachyOS)</span>
+                <span class="tag">Windows 11</span>
+                <span class="tag">Home Server</span>
+                <span class="tag">Print Server LAN</span>
+                <span class="tag">RAM Mgmt (darin cmd)</span>
+            </div>
+        </div>
+        <div class="skill-card sa-fade-up sa-d4" data-num="04">
+            <div class="skill-icon">🔧</div>
+            <h3>Hackintosh &amp; Mod</h3>
+            <div class="tag-container">
+                <span class="tag tag-hi">OpenCore</span>
+                <span class="tag tag-hi">ACPI / DSDT</span>
+                <span class="tag">Device-ID Spoofing</span>
+                <span class="tag">OCLP</span>
+                <span class="tag">VBIOS Flashing</span>
+                <span class="tag">SSDTTime</span>
+                <span class="tag">IORegistryExplorer</span>
+            </div>
+        </div>
+        <div class="skill-card sa-fade-up sa-d5" data-num="05">
+            <div class="skill-icon">📻</div>
+            <h3>Retro Hardware</h3>
+            <div class="tag-container">
+                <span class="tag tag-hi">iPod Classic 5.5</span>
+                <span class="tag">iPod Touch 6</span>
+                <span class="tag">Rockbox Firmware</span>
+                <span class="tag">Custom Firmware</span>
+            </div>
+        </div>
+        <div class="skill-card sa-fade-up sa-d6" data-num="06">
+            <div class="skill-icon">🛠</div>
+            <h3>CLI &amp; Media</h3>
+            <div class="tag-container">
+                <span class="tag tag-hi">Bash / Zsh</span>
+                <span class="tag">ffmpeg · yt-dlp</span>
+                <span class="tag">Android SDK</span>
+                <span class="tag">Final Cut Pro</span>
+                <span class="tag">Adobe Bridge</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── PORTFOLIO ── -->
+<section id="portfolio" class="section-container">
+    <div class="section-label sa-fade-up">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-rule"></div>
+    </div>
+    <div class="portfolio-list">
+
+        <div class="portfolio-item sa-slide-r sa-d1 clickable" data-href="https://github.com/J4olahmXDev/Hackintosh-EFI-Dell-OptiPlex-5060">
+            <div class="proj-num">01</div>
+            <div class="proj-left">
+                <div class="proj-meta">Hackintosh · Coffee Lake · Desktop</div>
+                <h3 class="proj-title">Dell OptiPlex 5060 — Hackintosh</h3>
+                <p class="proj-desc">Coffee Lake · AMD Radeon Pro WX2100 spoof เป็น RX 560 ผ่าน PCI compatible string — patch DSDT โดยตรง: HPET IRQ, Fake EC, USBX, PMCR, MCHC, SBUS พร้อม AMFIPass + RestrictEvents สำหรับ macOS Tahoe · dual-boot กับ Linux (CachyOS) และ Windows</p>
+                <div class="proj-tags">
+                    <span class="ptag">OpenCore</span><span class="ptag">Coffee Lake</span><span class="ptag">ACPI/DSDT</span><span class="ptag">WX2100→RX560</span><span class="ptag">macOS Tahoe</span>
+                </div>
+                <div class="proj-links-row">
+                    <a href="https://github.com/J4olahmXDev/Hackintosh-EFI-Dell-OptiPlex-5060" target="_blank" class="proj-link">EFI on GitHub ↗</a>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+        <div class="portfolio-item sa-slide-l sa-d2">
+            <div class="proj-num">02</div>
+            <div class="proj-left">
+                <div class="proj-meta">Hackintosh · AMD Ryzen · Desktop</div>
+                <h3 class="proj-title">Ryzen 5 2600 + ASRock B450M Steel Legend — Hackintosh</h3>
+                <p class="proj-desc">AMD Ryzen 5 2600 · ASRock B450M Steel Legend · RX 5500 XT · RAM 32GB · SSD 256+512GB — EFI รัน macOS Sequoia ด้วย AMD vanilla kernel patch, FixHPET, FakeEC จาก SSDTTime และ ResizeAppleGpuBars</p>
+                <div class="proj-tags">
+                    <span class="ptag">AMD Ryzen</span><span class="ptag">B450M Steel Legend</span><span class="ptag">RX 5500 XT</span><span class="ptag">macOS Sequoia</span><span class="ptag">SSDTTime</span>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+        <div class="portfolio-item sa-slide-r sa-d3 clickable" data-href="https://github.com/J4olahmXDev/Hackintosh-MacOsTahoe-Huawei-Matebook-D15-2020">
+            <div class="proj-num">03</div>
+            <div class="proj-left">
+                <div class="proj-meta">Hackintosh · Intel Ice Lake · Laptop</div>
+                <h3 class="proj-title">Huawei MateBook D15 — Hackintosh</h3>
+                <p class="proj-desc">Intel i3-10100U (Ice Lake) · ติดตั้ง macOS บน laptop OEM ผ่าน OpenCore — Power Management, Sleep/Wake, trackpad gesture และ battery status patch สำหรับฟอร์มแฟกเตอร์ notebook</p>
+                <div class="proj-tags">
+                    <span class="ptag">OpenCore</span><span class="ptag">Ice Lake</span><span class="ptag">i3-10100U</span><span class="ptag">macOS Tahoe</span><span class="ptag">Laptop</span>
+                </div>
+                <div class="proj-links-row">
+                    <a href="https://github.com/J4olahmXDev/Hackintosh-MacOsTahoe-Huawei-Matebook-D15-2020" target="_blank" class="proj-link">EFI on GitHub ↗</a>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+        <div class="portfolio-item sa-slide-l sa-d4 clickable" data-href="https://github.com/J4olahmXDev/Hackintosh-EFI-Dell-Inspiron-3458">
+            <div class="proj-num">04</div>
+            <div class="proj-left">
+                <div class="proj-meta">Hackintosh · Intel Broadwell · Laptop</div>
+                <h3 class="proj-title">Dell Inspiron 3458 — Hackintosh</h3>
+                <p class="proj-desc">Intel i5-5005U (Broadwell) · iGPU HD 5500 `AAPL,ig-platform-id: 06002616` — AppleALC layout-id 17, VoodooI2CHID trackpad, ECEnabler battery, AirportItlwm Intel WiFi, NullCPUPowerManagement สำหรับ Broadwell</p>
+                <div class="proj-tags">
+                    <span class="ptag">OpenCore</span><span class="ptag">Broadwell</span><span class="ptag">i5-5005U</span><span class="ptag">HD 5500</span><span class="ptag">Big Sur</span>
+                </div>
+                <div class="proj-links-row">
+                    <a href="https://github.com/J4olahmXDev/Hackintosh-EFI-Dell-Inspiron-3458" target="_blank" class="proj-link">EFI on GitHub ↗</a>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+        <div class="portfolio-item sa-slide-r sa-d5 clickable" data-href="https://github.com/J4olahmXDev/YTDL_BySi-S">
+            <div class="proj-num">05</div>
+            <div class="proj-left">
+                <div class="proj-meta">CLI Tool · Python · Cross-Platform</div>
+                <h3 class="proj-title">SiS YouTube Downloader V2.0</h3>
+                <p class="proj-desc">CLI tool portable รองรับ macOS และ Windows — ดาวน์โหลด MP3/WAV/ALAC/MP4 พร้อม thumbnail embedding, subtitle, quality selection และ spinner UI ผ่าน yt-dlp + ffmpeg static binaries ไม่ต้องติดตั้งเพิ่มเติม</p>
+                <div class="proj-tags">
+                    <span class="ptag">Python</span><span class="ptag">yt-dlp</span><span class="ptag">ffmpeg</span><span class="ptag">macOS</span><span class="ptag">Windows</span>
+                </div>
+                <div class="proj-links-row">
+                    <a href="https://github.com/J4olahmXDev/YTDL_BySi-S" target="_blank" class="proj-link">View on GitHub ↗</a>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+        <div class="portfolio-item sa-slide-l sa-d6 clickable" data-href="https://github.com/J4olahmXDev/TSP_Full-Project">
+            <div class="proj-num">06</div>
+            <div class="proj-left">
+                <div class="proj-meta">VBA · Excel · Algorithm · IE Logic</div>
+                <h3 class="proj-title">TSP Full Project — Route Optimization</h3>
+                <p class="proj-desc">แก้ปัญหา Travelling Salesman Problem (TSP) ด้วย VBA ใน Excel ประยุกต์ IE logic เพื่อ optimize เส้นทางแบบ brute-force + heuristic ใช้งานได้จริงในงาน logistics และ supply chain</p>
+                <div class="proj-tags">
+                    <span class="ptag">VBA</span><span class="ptag">Excel</span><span class="ptag">TSP Algorithm</span><span class="ptag">IE Logic</span><span class="ptag">Optimization</span>
+                </div>
+                <div class="proj-links-row">
+                    <a href="https://github.com/J4olahmXDev/TSP_Full-Project" target="_blank" class="proj-link">View on GitHub ↗</a>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+        <div class="portfolio-item sa-slide-r sa-d7 clickable" data-href="https://github.com/J4olahmXDev/Poultry-Farm-Manager">
+            <div class="proj-num">07</div>
+            <div class="proj-left">
+                <div class="proj-meta">Web App · Google Sheets · Farm Management</div>
+                <h3 class="proj-title">Poultry Farm Manager</h3>
+                <p class="proj-desc">ระบบจัดการฟาร์มไก่ครบวงจร ออกแบบด้วย IE logic — ติดตามข้อมูลการเลี้ยง, ต้นทุน, ผลผลิต และ report อัตโนมัติ ใช้ Google Sheets เป็น backend พร้อม dashboard แสดงผล</p>
+                <div class="proj-tags">
+                    <span class="ptag">Google Sheets</span><span class="ptag">Automation</span><span class="ptag">IE Logic</span><span class="ptag">Dashboard</span>
+                </div>
+                <div class="proj-links-row">
+                    <a href="https://github.com/J4olahmXDev/Poultry-Farm-Manager" target="_blank" class="proj-link">View on GitHub ↗</a>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+        <div class="portfolio-item sa-slide-l sa-d8 clickable" data-href="https://github.com/J4olahmXDev/Monthita">
+            <div class="proj-num">08</div>
+            <div class="proj-left">
+                <div class="proj-meta">Web Game · Chemistry · Wikipedia API</div>
+                <h3 class="proj-title">Monthita — Chemistry Learning Game</h3>
+                <p class="proj-desc">เกม Web-based สำหรับเรียนรู้เคมี — ดึงข้อมูลธาตุจาก Wikipedia API แบบ real-time มี 4 game modes และระบบ leaderboard ผ่าน Google Sheets แปลงจาก Construct 2 เป็น modern web app</p>
+                <div class="proj-tags">
+                    <span class="ptag">JavaScript</span><span class="ptag">Wikipedia API</span><span class="ptag">Google Sheets</span><span class="ptag">Game Dev</span>
+                </div>
+                <div class="proj-links-row">
+                    <a href="https://github.com/J4olahmXDev/Monthita" target="_blank" class="proj-link">View on GitHub ↗</a>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+        <div class="portfolio-item sa-slide-r sa-d1">
+            <div class="proj-num">09</div>
+            <div class="proj-left">
+                <div class="proj-meta">macOS App · Swift · SwiftUI</div>
+                <h3 class="proj-title">Zenist — macOS Notch Manager</h3>
+                <p class="proj-desc">Swift + SwiftUI targeting macOS 14+ — NSPanel notch window, hover/expand animation, MediaRemote integration สำหรับ Now Playing, CPU/RAM stats และ Atoll-style vertical tab UI ออกแบบตั้งแต่ต้น</p>
+                <div class="proj-tags">
+                    <span class="ptag">Swift</span><span class="ptag">SwiftUI</span><span class="ptag">macOS 14+</span><span class="ptag">MediaRemote</span><span class="ptag">NSPanel</span>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+        <div class="portfolio-item sa-slide-l sa-d2">
+            <div class="proj-num">10</div>
+            <div class="proj-left">
+                <div class="proj-meta">Home Server · Linux · Self-Hosted</div>
+                <h3 class="proj-title">Personal Home Server &amp; Cloud</h3>
+                <p class="proj-desc">ชุบชีวิต Dell OptiPlex 5060 เป็น multi-boot: Hackintosh + Linux (CachyOS) + Windows — Cloud Storage ส่วนตัว, Automated Tasks, Print Server สำหรับ LAN พร้อม custom RAM management command (darin)</p>
+                <div class="proj-tags">
+                    <span class="ptag">CachyOS</span><span class="ptag">Cloud Storage</span><span class="ptag">Print Server</span><span class="ptag">Multi-Boot</span><span class="ptag">RAM Mgmt</span>
+                </div>
+            </div>
+            <div class="proj-arrow">→</div>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+<!-- ── JOURNEY TIMELINE ── -->
+<section id="journey" class="section-container">
+    <div class="section-label sa-fade-up">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Journey</h2>
+        <div class="section-rule"></div>
+    </div>
+    <div class="timeline">
+
+        <div class="tl-item sa-slide-l sa-d1">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2021</div>
+            <div class="tl-content">
+                <h3>Hackintosh Begins</h3>
+                <p>เริ่มศึกษา Hackintosh จริงจังกลางปี 2021 — Dell Inspiron 3567 เป็น build แรก เริ่มเข้าใจ ACPI, kext และ bootloader อย่างลึกซึ้ง</p>
+            </div>
+        </div>
+
+        <div class="tl-item sa-slide-r sa-d2">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2022</div>
+            <div class="tl-content">
+                <h3>Expanding Builds + Retro Modding</h3>
+                <p>ขยาย Hackintosh สู่ Huawei MateBook D15 และ AMD Ryzen build — ควบคู่กับการ mod iPod Classic 5.5 ด้วย Rockbox firmware</p>
+            </div>
+        </div>
+
+        <div class="tl-item sa-slide-l sa-d3">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2023</div>
+            <div class="tl-content">
+                <h3>Home Server + Automation</h3>
+                <p>ตั้ง Home Server บน Dell OptiPlex 5060 รัน Linux (CachyOS) — Cloud Storage, Print Server, Automated Tasks พร้อมเริ่มเขียน Automation ด้วย Google Apps Script</p>
+            </div>
+        </div>
+
+        <div class="tl-item sa-slide-r sa-d4">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024</div>
+            <div class="tl-content">
+                <h3>OptiPlex Hackintosh + Python CLI</h3>
+                <p>Deep dive DSDT patching บน OptiPlex 5060 — HPET IRQ, GPU spoofing WX2100→RX560 พร้อมพัฒนา SiS YouTube Downloader V2.0 ด้วย Python</p>
+            </div>
+        </div>
+
+        <div class="tl-item sa-slide-l sa-d5">
+            <div class="tl-dot tl-dot-active"></div>
+            <div class="tl-year">2025–Now</div>
+            <div class="tl-content">
+                <h3>Swift Developer + MacBook Air M3</h3>
+                <p>อัปเกรดมา MacBook Air M3 — เริ่มพัฒนา Zenist (SwiftUI macOS app), ศึกษา iOS development และทำ KVS Automation System สำหรับ workflow จริง</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ── UPCOMING ── -->
+<section id="upcoming" class="section-container">
+    <div class="section-label sa-fade-up">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Upcoming</h2>
+        <div class="section-rule"></div>
+    </div>
+    <div class="upcoming-grid">
+        <div class="upcoming-card sa-scale sa-d1">
+            <div class="badge">In Development</div>
+            <div class="upcoming-icon">🔳</div>
+            <h3>Zenist — Full Release</h3>
+            <p>ต่อยอด macOS Notch Manager: album art, Pomodoro, ambient sound, system stats panel, Atoll-style tab UI ครบชุด — เตรียม release บน GitHub</p>
+            <div class="progress-bar"><div class="progress-fill" style="--w:55%"></div></div>
+            <span class="progress-label">55% — Phase 1 Integration</span>
+        </div>
+        <div class="upcoming-card sa-scale sa-d2">
+            <div class="badge">In Progress</div>
+            <div class="upcoming-icon">🏙</div>
+            <h3>Interactive 3D Urban Explorer</h3>
+            <p>ผังเมือง 3D ที่ผสม Google Maps เข้ากับการสำรวจแบบ GTA พร้อมกลไก monster spawning บนแผนที่ real-time</p>
+            <div class="progress-bar"><div class="progress-fill" style="--w:25%"></div></div>
+            <span class="progress-label">25% — Conceptual Phase</span>
+        </div>
+        <div class="upcoming-card sa-scale sa-d3">
+            <div class="badge">Planning</div>
+            <div class="upcoming-icon">📱</div>
+            <h3>iOS Application</h3>
+            <p>ต่อยอดทักษะ Swift + Xcode สู่ iOS — แอปที่แก้ปัญหาจริงในชีวิตประจำวัน เตรียม App Store release</p>
+            <div class="progress-bar"><div class="progress-fill" style="--w:40%"></div></div>
+            <span class="progress-label">40% — Learning Phase</span>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+    <div class="footer-inner sa-fade-up">
+        <p class="footer-logo">suanaph_</p>
+        <div class="footer-links">
+            <a href="https://github.com/J4olahmXDev" target="_blank" class="footer-link">GitHub ↗</a>
+        </div>
+        <p class="footer-copy">© 2026 suanaph · Built with passion · GitHub Pages</p>
+    </div>
+</footer>
+
+<script src="js/stars.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
